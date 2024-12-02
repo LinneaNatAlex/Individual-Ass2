@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: black;
+    gap: 20px;
+}
+.nav__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #edbd17;
+    width: 100%;
+    font-size: 50px;
+    padding-right: 30%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #e7b23f;
+    background-color: #C8102E;
+}
+
+.logo__nav{
+    height: 250px;
+}
+
+.grid__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, minmax(150px,1fr));
+    grid-template-rows: repeat(5, minmax(150,1fr));
+    border: 2px solid black;
+    height:auto;
+}
+
+.item{
+    border: 4px solid gold;
+    margin: 10px;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 3s;
+    background-color: #C8102E;
+    box-shadow: 0px 1px 0px #ffffff,
+    0px 5px 10px #e4c89d;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    
+}
+
+.item:hover{
+    transform: scale(1.5);
+}
+
+.player{
+    border: 3px solid gold;
+    max-height: 250px;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players{
+    max-height: 200px;
+    max-width: 180px;
+}
+
+h3 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 1px black;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    text-shadow: 0px 1px 0px black;
+    margin-top: 0;
+    margin-bottom: 1px;
+    border-top: 1px solid white;
+    font-size: 11px;
+    padding-top:5px;
+    
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.stats{
+    height:auto;
+    padding:5px;
+}
