@@ -36,8 +36,8 @@ body {
 .item{
     border: 4px solid gold;
     margin: 10px;
-    height: 500px;
-    width: 300px;
+    height: 514px;
+    width: 285px;
     border-radius: 10px;
     transition: 3s;
     background-color: #C8102E;
@@ -47,6 +47,7 @@ body {
     word-wrap: break-word;
     word-break: break-word;
     overflow: hidden;
+    
     
 }
 
@@ -109,3 +110,28 @@ ul {
     height:auto;
     padding:5px;
 }
+
+@media (max-width:670px){
+
+    .grid__container{
+        grid-template-columns: 1fr;
+        gap:10px;
+    }
+    .nav__bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        font-size: 30px;
+        padding-left: 30%;
+    }
+
+    .item:hover{
+        transform: scale(1.2);
+    }
+ }
+
+
+ 
+   
+
